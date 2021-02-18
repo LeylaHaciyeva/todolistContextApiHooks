@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.App{
+    display:block;
+    border:1px solid black;
+    width: 700px;
+    margin:50px auto 0 auto;
+    padding: 20px 0;
+}
+.header-text{
+    text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#todos{
+    padding: 7px;
+    width: 300px;
+}
+.create-btn{
+    padding: 9px;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgb(43, 41, 41);
+}
+ul{
+   display: block;
+   width: 380px;
+   border: 1px solid black;
+   margin: 10px auto 10px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li .active{
+    opacity: .7;
+    text-decoration: line-through;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.edit-btn{
+    margin-right: 20px;
+    padding: 4px 15px;
+    border: none;
+    background-color: rgb(21, 146, 21);
+    color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#editValue{
+    width: 200px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save-btn{
+    margin-right: 20px;
+    padding: 4px 15px;
+    border: none;
+    background-color: yellow;
+    color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 10px auto;
+    width: 400px;
+}
+.delete-btn{
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border: none;
+    margin-right: 10px;
 }
